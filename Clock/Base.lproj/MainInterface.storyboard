@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="Clock" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1U-xk-IcU">
+                                <rect key="frame" x="10" y="6" width="300" height="188"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BgN-6J-25t" customClass="Tile" customModule="Clock" customModuleProvider="target">
+                                        <rect key="frame" x="112" y="0.0" width="188" height="188"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="BgN-6J-25t" secondAttribute="height" multiplier="1:1" id="oq6-sk-PLv"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kcE-W3-6RU" customClass="Tile" customModule="Clock" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="75" width="112" height="113"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kcE-W3-6RU" secondAttribute="height" multiplier="1:1" id="NMA-Hv-HfA"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUj-MG-Qsg" customClass="Tile" customModule="Clock" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="eUj-MG-Qsg" secondAttribute="height" multiplier="1:1" id="Jyi-oq-aRH"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P6J-Yo-r7C" customClass="Tile" customModule="Clock" customModuleProvider="target">
+                                        <rect key="frame" x="75" y="0.0" width="37" height="38"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="P6J-Yo-r7C" secondAttribute="height" multiplier="1:1" id="42f-c7-fMJ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WoE-MQ-zjE" customClass="Tile" customModule="Clock" customModuleProvider="target">
+                                        <rect key="frame" x="75" y="38" width="37" height="37"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="u1U-xk-IcU" secondAttribute="height" multiplier="8:5" id="3sc-4A-xIg"/>
+                                    <constraint firstAttribute="bottom" secondItem="BgN-6J-25t" secondAttribute="bottom" id="Dg0-zj-m5k"/>
+                                    <constraint firstItem="BgN-6J-25t" firstAttribute="leading" secondItem="kcE-W3-6RU" secondAttribute="trailing" id="GUa-z2-tcF"/>
+                                    <constraint firstItem="eUj-MG-Qsg" firstAttribute="leading" secondItem="u1U-xk-IcU" secondAttribute="leading" id="MAb-wG-nxQ"/>
+                                    <constraint firstItem="P6J-Yo-r7C" firstAttribute="top" secondItem="u1U-xk-IcU" secondAttribute="top" id="Vvr-2x-oWE"/>
+                                    <constraint firstAttribute="bottom" secondItem="kcE-W3-6RU" secondAttribute="bottom" id="WF3-xp-IMj"/>
+                                    <constraint firstItem="P6J-Yo-r7C" firstAttribute="leading" secondItem="eUj-MG-Qsg" secondAttribute="trailing" id="WLz-pk-1dG"/>
+                                    <constraint firstItem="kcE-W3-6RU" firstAttribute="leading" secondItem="u1U-xk-IcU" secondAttribute="leading" id="YXe-05-ieT"/>
+                                    <constraint firstItem="BgN-6J-25t" firstAttribute="top" secondItem="u1U-xk-IcU" secondAttribute="top" id="dLJ-HK-DFy"/>
+                                    <constraint firstAttribute="trailing" secondItem="BgN-6J-25t" secondAttribute="trailing" id="isc-bY-uGQ"/>
+                                    <constraint firstItem="eUj-MG-Qsg" firstAttribute="top" secondItem="u1U-xk-IcU" secondAttribute="top" id="qYd-I9-IF1"/>
+                                    <constraint firstItem="BgN-6J-25t" firstAttribute="leading" secondItem="WoE-MQ-zjE" secondAttribute="trailing" id="qxI-8D-7fa"/>
+                                    <constraint firstItem="kcE-W3-6RU" firstAttribute="top" secondItem="WoE-MQ-zjE" secondAttribute="bottom" id="t0k-WI-0OL"/>
+                                    <constraint firstItem="WoE-MQ-zjE" firstAttribute="top" secondItem="P6J-Yo-r7C" secondAttribute="bottom" id="vLF-n2-T3Q"/>
+                                    <constraint firstItem="WoE-MQ-zjE" firstAttribute="leading" secondItem="eUj-MG-Qsg" secondAttribute="trailing" id="wra-Hh-XYC"/>
+                                    <constraint firstItem="BgN-6J-25t" firstAttribute="leading" secondItem="P6J-Yo-r7C" secondAttribute="trailing" id="xZ9-Qj-1El"/>
+                                    <constraint firstItem="kcE-W3-6RU" firstAttribute="top" secondItem="eUj-MG-Qsg" secondAttribute="bottom" id="xaf-SG-Zzj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="u1U-xk-IcU" secondAttribute="bottom" constant="6" id="3Gb-Xg-Gd5"/>
+                            <constraint firstItem="u1U-xk-IcU" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="6" id="ftV-kD-Dff"/>
+                            <constraint firstItem="u1U-xk-IcU" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="ps5-8z-yJH"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="200"/>
+                    <connections>
+                        <outlet property="giantScreen0" destination="BgN-6J-25t" id="MeH-iN-3qT"/>
+                        <outlet property="largeScreen0" destination="kcE-W3-6RU" id="3Ti-UD-dWx"/>
+                        <outlet property="screen0" destination="eUj-MG-Qsg" id="hLg-jf-kNk"/>
+                        <outlet property="smallScreen0" destination="WoE-MQ-zjE" id="rw0-da-mE0"/>
+                        <outlet property="smallScreen1" destination="P6J-Yo-r7C" id="v6m-oR-CbE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="285"/>
+        </scene>
+    </scenes>
+</document>
