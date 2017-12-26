@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA5D43061FF280B0001F99C3 /* ClockStyleSegment.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5D43051FF280B0001F99C3 /* ClockStyleSegment.xib */; };
+		FA8344D81FF24CA300DE3F38 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8344D71FF24CA300DE3F38 /* CustomSegmentedControl.swift */; };
+		FA8344DA1FF254AB00DE3F38 /* ClockStyleSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8344D91FF254AB00DE3F38 /* ClockStyleSegment.swift */; };
 		FAC0A3DF1D6CE01000DBC4EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0A3DE1D6CE01000DBC4EC /* AppDelegate.swift */; };
 		FAC0A3E11D6CE01000DBC4EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0A3E01D6CE01000DBC4EC /* ViewController.swift */; };
 		FAC0A3E41D6CE01000DBC4EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC0A3E21D6CE01000DBC4EC /* Main.storyboard */; };
@@ -17,6 +20,8 @@
 		FAC0A3FD1D6CE04B00DBC4EC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC0A3FB1D6CE04B00DBC4EC /* MainInterface.storyboard */; };
 		FAC0A4011D6CE04B00DBC4EC /* Clock.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FAC0A3F41D6CE04B00DBC4EC /* Clock.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FAC0A4071D6CE0AC00DBC4EC /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0A4061D6CE0AC00DBC4EC /* Tile.swift */; };
+		FAEE7FDE1FF2A7D700B61904 /* ClockPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEE7FDD1FF2A7D700B61904 /* ClockPreferences.swift */; };
+		FAEE7FDF1FF2A7DC00B61904 /* ClockPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEE7FDD1FF2A7D700B61904 /* ClockPreferences.swift */; };
 		FAF361141D6DC9840078F21C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF361131D6DC9840078F21C /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +50,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA5D43051FF280B0001F99C3 /* ClockStyleSegment.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClockStyleSegment.xib; sourceTree = "<group>"; };
+		FA8344D71FF24CA300DE3F38 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		FA8344D91FF254AB00DE3F38 /* ClockStyleSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockStyleSegment.swift; sourceTree = "<group>"; };
 		FAC0A3DB1D6CE01000DBC4EC /* F-Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F-Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC0A3DE1D6CE01000DBC4EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC0A3E01D6CE01000DBC4EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +66,9 @@
 		FAC0A3FC1D6CE04B00DBC4EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		FAC0A3FE1D6CE04B00DBC4EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC0A4061D6CE0AC00DBC4EC /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		FAEE7FDB1FF2A03100B61904 /* F-Clock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "F-Clock.entitlements"; sourceTree = "<group>"; };
+		FAEE7FDC1FF2A0EF00B61904 /* Clock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clock.entitlements; sourceTree = "<group>"; };
+		FAEE7FDD1FF2A7D700B61904 /* ClockPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockPreferences.swift; sourceTree = "<group>"; };
 		FAF361131D6DC9840078F21C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +94,7 @@
 		FAC0A3D21D6CE01000DBC4EC = {
 			isa = PBXGroup;
 			children = (
+				FAEE7FDB1FF2A03100B61904 /* F-Clock.entitlements */,
 				FAC0A3DD1D6CE01000DBC4EC /* Fibonacci Clock */,
 				FAC0A3F81D6CE04B00DBC4EC /* Clock */,
 				FAC0A3F51D6CE04B00DBC4EC /* Frameworks */,
@@ -104,7 +116,11 @@
 			children = (
 				FAC0A3DE1D6CE01000DBC4EC /* AppDelegate.swift */,
 				FAC0A3E01D6CE01000DBC4EC /* ViewController.swift */,
+				FA8344D91FF254AB00DE3F38 /* ClockStyleSegment.swift */,
+				FA8344D71FF24CA300DE3F38 /* CustomSegmentedControl.swift */,
+				FAEE7FDD1FF2A7D700B61904 /* ClockPreferences.swift */,
 				FAC0A3E21D6CE01000DBC4EC /* Main.storyboard */,
+				FA5D43051FF280B0001F99C3 /* ClockStyleSegment.xib */,
 				FAC0A3E51D6CE01000DBC4EC /* Assets.xcassets */,
 				FAC0A3E71D6CE01000DBC4EC /* LaunchScreen.storyboard */,
 				FAC0A3EA1D6CE01000DBC4EC /* Info.plist */,
@@ -123,6 +139,7 @@
 		FAC0A3F81D6CE04B00DBC4EC /* Clock */ = {
 			isa = PBXGroup;
 			children = (
+				FAEE7FDC1FF2A0EF00B61904 /* Clock.entitlements */,
 				FAC0A3F91D6CE04B00DBC4EC /* TodayViewController.swift */,
 				FAC0A4061D6CE0AC00DBC4EC /* Tile.swift */,
 				FAC0A3FB1D6CE04B00DBC4EC /* MainInterface.storyboard */,
@@ -185,11 +202,21 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = JDQG5G8BQX;
 						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					FAC0A3F31D6CE04B00DBC4EC = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = JDQG5G8BQX;
 						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -219,6 +246,7 @@
 			files = (
 				FAC0A3E91D6CE01000DBC4EC /* LaunchScreen.storyboard in Resources */,
 				FAC0A3E61D6CE01000DBC4EC /* Assets.xcassets in Resources */,
+				FA5D43061FF280B0001F99C3 /* ClockStyleSegment.xib in Resources */,
 				FAC0A3E41D6CE01000DBC4EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,7 +267,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC0A3E11D6CE01000DBC4EC /* ViewController.swift in Sources */,
+				FAEE7FDE1FF2A7D700B61904 /* ClockPreferences.swift in Sources */,
 				FAC0A3DF1D6CE01000DBC4EC /* AppDelegate.swift in Sources */,
+				FA8344DA1FF254AB00DE3F38 /* ClockStyleSegment.swift in Sources */,
+				FA8344D81FF24CA300DE3F38 /* CustomSegmentedControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +281,7 @@
 				FAC0A3FA1D6CE04B00DBC4EC /* TodayViewController.swift in Sources */,
 				FAF361141D6DC9840078F21C /* Extensions.swift in Sources */,
 				FAC0A4071D6CE0AC00DBC4EC /* Tile.swift in Sources */,
+				FAEE7FDF1FF2A7DC00B61904 /* ClockPreferences.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -367,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -378,13 +410,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "F-Clock.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JDQG5G8BQX;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Fibonacci Clock/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alex.Fibonacci-Clock";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alex.Fibonacci-Clock1";
 				PRODUCT_NAME = "F-Clock";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
@@ -395,13 +429,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "F-Clock.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JDQG5G8BQX;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Fibonacci Clock/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alex.Fibonacci-Clock";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alex.Fibonacci-Clock1";
 				PRODUCT_NAME = "F-Clock";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
@@ -411,12 +447,14 @@
 		FAC0A4031D6CE04B00DBC4EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Clock/Clock.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JDQG5G8BQX;
 				INFOPLIST_FILE = Clock/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alex.Fibonacci-Clock.Clock";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alex.Fibonacci-Clock1.Clock1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -428,12 +466,14 @@
 		FAC0A4041D6CE04B00DBC4EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Clock/Clock.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JDQG5G8BQX;
 				INFOPLIST_FILE = Clock/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alex.Fibonacci-Clock.Clock";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alex.Fibonacci-Clock1.Clock1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;

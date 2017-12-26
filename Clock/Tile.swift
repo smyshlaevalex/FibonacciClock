@@ -22,7 +22,6 @@ class Tile : UIView {
                 return
             }
             
-            layer.borderColor = UIColor.black.cgColor
             layer.borderWidth = 2
             
             switch color {
@@ -34,6 +33,19 @@ class Tile : UIView {
                 backgroundColor = UIColor.green
             case .blue:
                 backgroundColor = UIColor.blue
+            }
+        }
+    }
+    
+    var borderStyle: ClockBorderStyle? {
+        didSet {
+            if let borderStyle = borderStyle {
+                switch borderStyle {
+                case .black:
+                    layer.borderColor = UIColor.black.cgColor
+                case .gray:
+                    layer.borderColor = UIColor.lightGray.cgColor
+                }
             }
         }
     }

@@ -9,17 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var clockStyleSegmentedControl: CustomSegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let clockStyleBlackBorder = Bundle.main.loadNibNamed("ClockStyleSegment", owner: self, options: nil)?.first as? ClockStyleSegment
+        clockStyleBlackBorder?.segmentedControl = clockStyleSegmentedControl
+        clockStyleBlackBorder?.id = 0
+        clockStyleBlackBorder?.imageView.image = #imageLiteral(resourceName: "widgetBlackBorders")
+        clockStyleBlackBorder?.title.text = "Black"
+        let clockStyleGrayBorder = Bundle.main.loadNibNamed("ClockStyleSegment", owner: self, options: nil)?.first as? ClockStyleSegment
+        clockStyleGrayBorder?.segmentedControl = clockStyleSegmentedControl
+        clockStyleGrayBorder?.id = 1
+        clockStyleGrayBorder?.imageView.image = #imageLiteral(resourceName: "widgetGrayBorders")
+        clockStyleGrayBorder?.title.text = "Gray"
+        
+        clockStyleSegmentedControl.segments = [clockStyleBlackBorder, clockStyleGrayBorder].flatMap { $0 }
+        
+        clockStyleSegmentedControl.idOfSelectedSegment = ClockPreferences.shared.clockBorderStyle.rawValue
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func selectionChanged(_ sender: CustomSegmentedControl) {
+        ClockPreferences.shared.clockBorderStyle = ClockBorderStyle(rawValue: clockStyleSegmentedControl.idOfSelectedSegment) ?? .black
     }
-
-
 }
 

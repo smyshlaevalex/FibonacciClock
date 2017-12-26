@@ -27,10 +27,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             extensionContext?.widgetLargestAvailableDisplayMode = .expanded
         }
         
+        let borderStyle = ClockPreferences.shared.clockBorderStyle
+        
         screen = [smallScreen0, smallScreen1, screen0, largeScreen0, giantScreen0]
         
         for i in screen {
             i.color = .white
+            i.borderStyle = borderStyle
         }
         
         updateClock()
